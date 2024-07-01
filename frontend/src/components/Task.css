@@ -1,0 +1,68 @@
+.task-item {
+  background-color: rgba(239, 239, 239, 0.8); /* Transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+  padding: 15px;
+  border: none; /* Remove border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.task-item h5 {
+  margin: 0 0 10px 0;
+}
+
+.task-item p {
+  margin: 0 0 5px 0;
+}
+
+.task-item .btn {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.btn-todo {
+  background-color: rgb(0, 170, 255);
+  border-color: rgb(0, 170, 255);
+  color: white;
+}
+
+.btn-todo:hover {
+  background-color: rgb(9, 152, 223);
+  border-color: rgb(9, 152, 223);
+}
+
+
+.btn-in-progress {
+  background-color: rgb(255, 221, 0);
+  border-color: rgb(255, 221, 0);
+  color: black;
+}
+
+.btn-in-progress:hover {
+  background-color: rgb(230, 201, 8);
+  border-color: rgb(230, 201, 8);
+}
+
+.btn-done {
+  background-color: rgb(0, 136, 0);
+  border-color: rgb(0, 136, 0);
+  color: white;
+}
+
+.btn-done:hover {
+  background-color: rgb(10, 117, 10);
+  border-color: rgb(10, 117, 10);
+  color: white;
+}
+
+.status-todo {
+  color: rgb(0, 170, 255);
+}
+
+.status-in-progress {
+  color: rgb(255, 221, 0);
+}
+
+.status-done {
+  color: rgb(0, 136, 0);
+}
