@@ -1,0 +1,30 @@
+.container {
+  margin-top: -40px;
+  padding: 100px;
+}
+
+.task-form {
+  background-color: rgba(239, 239, 239, 0.8); /* Transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.filter-section label {
+  font-size: 1.5em; /* Increase font size */
+  font-weight: 500; /* Make the text bold */
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.center-heading {
+  text-align: center;
+  font-size: 2em; /* Adjust the font size as needed */
+}
