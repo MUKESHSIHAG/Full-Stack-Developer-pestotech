@@ -23,7 +23,6 @@ A simple task management application with a ReactJS frontend and a Flask backend
     ```sh
     git clone https://github.com/MUKESHSIHAG/Full-Stack-Developer-pestotech.git
     cd Full-Stack-Developer-pestotech
-    git checkout master
     ```
 ## Running the Frontend
 
