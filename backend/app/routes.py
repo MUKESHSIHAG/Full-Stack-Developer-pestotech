@@ -13,7 +13,6 @@ def add_task():
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
     tasks = Task.query.all()
-    print("here....", tasks)
     return jsonify([{'id': task.id, 'title': task.title, 'description': task.description, 'status': task.status} for task in tasks])
 
 @app.route('/tasks/<int:id>', methods=['PUT'])

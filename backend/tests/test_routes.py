@@ -1,18 +1,24 @@
 import pytest
-import logging
 from app import create_app, db
+import os
+
+from config import TestingConfig
 
 @pytest.fixture(scope='module')
-def client():
-    app = create_app()
-    app.config['TESTING'] = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
-    app.config['WTF_CSRF_ENABLED'] = False
-
+def client(request):
+    app = create_app(TestingConfig)
+    
     with app.app_context():
         db.create_all()
         yield app.test_client()
         db.drop_all()
+
+    def teardown():
+        db_path = os.path.join(app.instance_path, 'test_tasks.db')
+        if os.path.exists(db_path):
+            os.remove(db_path)
+
+    request.addfinalizer(teardown)
 
 def test_add_task(client):
     # Adding a task

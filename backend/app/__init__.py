@@ -1,16 +1,14 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
+from config import DevelopmentConfig
 
 db = SQLAlchemy()
 
-def create_app():
+def create_app(config_class=DevelopmentConfig):
     app = Flask(__name__)
+    app.config.from_object(config_class)
     CORS(app)
-
-    # Configuring the database
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tasks.db'
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     db.init_app(app)
 

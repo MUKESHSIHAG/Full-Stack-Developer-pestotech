@@ -4,43 +4,17 @@ A simple task management application with a ReactJS frontend and a Flask backend
 
 ## Table of Contents
 
-- [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Running the Frontend](#running-the-frontend)
 - [Running the Backend](#running-the-backend)
 - [Running Unit Tests](#running-unit-tests)
 
-## Project Structure
-
-Full-Stack-Developer-pestotech/
-│
-├── frontend/
-│ ├── public/
-│ ├── src/
-│ ├── package.json
-│ ├── ...
-│
-├── backend/
-│ ├── app/
-│ │ ├── init.py
-│ │ ├── models.py
-│ │ ├── routes.py
-│ ├── tests/
-│ │ ├── init.py
-│ │ ├── test_routes.py
-│ ├── app.py
-│ ├── requirements.txt
-│ ├── ...
-│
-├── README.md
-
-
 ## Prerequisites
 
 - Node.js and npm (for frontend)
-- Python and pip (for backend)
-- SQLite (or any other preferred database)
+- Python3 and pip (for backend)
+- SQLite as a database
 
 ## Getting Started
 
@@ -49,8 +23,8 @@ Full-Stack-Developer-pestotech/
     ```sh
     git clone https://github.com/MUKESHSIHAG/Full-Stack-Developer-pestotech.git
     cd Full-Stack-Developer-pestotech
+    git checkout master
     ```
-
 ## Running the Frontend
 
 1. **Navigate to the frontend directory**
@@ -104,7 +78,7 @@ Full-Stack-Developer-pestotech/
 
 ## Running Unit Tests
 
-1. **Navigate to the backend directory**
+1. **Navigate to the backend directory (If not in the backend directory)**
 
     ```sh
     cd backend
@@ -113,16 +87,12 @@ Full-Stack-Developer-pestotech/
 2. **Run the tests using pytest**
 
     ```sh
-    pytest -s
+    pytest
     ```
 
-    This will run the unit tests and display the output in the terminal.
+    This will run the unit tests.
 
 ## Notes
 
 - Ensure the backend is running before starting the frontend to ensure the frontend can communicate with the backend.
 - The frontend and backend are configured to run on ports `3000` and `5000` respectively. Make sure these ports are available or modify the configuration if necessary.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
